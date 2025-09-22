@@ -4,7 +4,8 @@ A full-stack web application for managing supermarket products.
 Features include: Add, Update, Delete, Prevent duplicate products. Built with **React.js**, **Laravel/PHP**, and **MySQL**.
 ---
 ![image alt](https://github.com/Deepatharshan/Supermarket/blob/bff6fa9789116013f3b9c1d85335521cfb412f16/super%20market.png)
-
+---
+![image alt](https://github.com/Deepatharshan/Supermarket/blob/058040a1ab6cdc2f096ef8475bb44f1f62bd2897/super%20market2.png)
 ---
 
 ## Features
