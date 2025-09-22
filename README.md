@@ -7,6 +7,8 @@ Features include: Add, Update, Delete, Prevent duplicate products. Built with **
 ---
 ![image alt](https://github.com/Deepatharshan/Supermarket/blob/058040a1ab6cdc2f096ef8475bb44f1f62bd2897/super%20market2.png)
 ---
+![image alt](https://github.com/Deepatharshan/Supermarket/blob/9e4ee604c2bf457524700a68b653ed162050e366/desktopsupermarket.png)
+---
 
 ## Features
 
