@@ -1,0 +1,14 @@
+body{font-family: Arial, sans-serif;background:#f6f7fb;margin:0;padding:20px}
+.container{max-width:1100px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+h1{margin-top:0}
+.product-form{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;align-items:center}
+.product-form label{display:flex;flex-direction:column}
+.product-form input{padding:8px;border:1px solid #ddd;border-radius:4px}
+.form-actions{grid-column:1 / -1;display:flex;gap:10px}
+.table-wrapper{margin-top:20px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+button{padding:6px 10px;border-radius:6px;border:0;cursor:pointer}
+button:hover{opacity:0.9}
+button[type="submit"]{background:#2b8aef;color:#fff}
+button[type="button"]{background:#888;color:#fff}

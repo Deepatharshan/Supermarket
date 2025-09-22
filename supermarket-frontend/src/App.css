@@ -1,0 +1,164 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo and cards (existing) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ------------------- Dashboard Styles ------------------- */
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+/* Dashboard wrapper: Form + List side by side */
+.product-dashboard {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* wraps on smaller screens */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Product form */
+.product-form {
+  flex: 1 1 300px;
+  min-width: 280px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.product-form h2 {
+  margin-bottom: 1rem;
+}
+
+.product-form label {
+  display: block;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.product-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Form buttons */
+.form-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-actions button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.form-actions button:hover {
+  background-color: #21a1f1;
+}
+
+/* Product list */
+.product-list {
+  flex: 2 1 400px;
+  min-width: 300px;
+  overflow-x: auto;
+}
+
+.product-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-list th, .product-list td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-list th {
+  background-color: #61dafb;
+  color: #fff;
+}
+
+.product-list button {
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.product-list button.edit {
+  background-color: #4caf50;
+}
+
+.product-list button.edit:hover {
+  background-color: #45a049;
+}
+
+.product-list button.delete {
+  background-color: #f44336;
+}
+
+.product-list button.delete:hover {
+  background-color: #d32f2f;
+}
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 768px) {
+  .product-dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-form, .product-list {
+    flex: 1 1 100%;
+  }
+}
