@@ -152,6 +152,103 @@ h1 {
   background-color: #d32f2f;
 }
 
+/* ------------------- Loading Screen Styles ------------------- */
+.loading-screen {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #000000 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 99999 !important;
+  transition: opacity 1s ease-out !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.loading-content {
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.loading-content.logo-visible {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.loading-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-icon {
+  font-size: 5rem;
+  animation: logoFloat 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.logo-text {
+  color: #ffffff !important;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 4px;
+  margin: 0 !important;
+  animation: logoGlow 3s ease-in-out infinite alternate;
+  text-transform: uppercase;
+}
+
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-2deg);
+  }
+}
+
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-2deg);
+  }
+}
+
+@keyframes logoGlow {
+  0% {
+    text-shadow: 
+      0 0 5px rgba(255, 255, 255, 0.3),
+      0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    text-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(255, 255, 255, 0.6),
+      0 0 40px rgba(255, 255, 255, 0.4),
+      0 0 50px rgba(255, 255, 255, 0.2);
+  }
+}
+
 /* ------------------- Responsive ------------------- */
 @media (max-width: 768px) {
   .product-dashboard {
@@ -160,5 +257,13 @@ h1 {
   }
   .product-form, .product-list {
     flex: 1 1 100%;
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+  }
+  
+  .logo-icon {
+    font-size: 3rem;
   }
 }
